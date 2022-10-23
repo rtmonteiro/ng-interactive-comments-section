@@ -1,0 +1,3 @@
+<ng-container *ngFor="let comment of comments">
+  <app-comment [isUser]="comment.user.username === currentUser.username" [comment]="comment"></app-comment>
+</ng-container>

@@ -1,0 +1,38 @@
+{
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "NmFiMGM1YjEtNmYyOS00YmU2LWJiNTYtMTZjYjY0YjZlMWRhfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ]
+    }
+  },
+  "workspaceLayout": {
+    "appsDir": "projects",
+    "libsDir": "projects"
+  },
+  "defaultProject": "ng-interactive-comments-section"
+}

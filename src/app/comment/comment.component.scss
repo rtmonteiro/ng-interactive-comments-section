@@ -1,0 +1,39 @@
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--white);
+  border: 1px solid var(--gray-very-light);
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 20px;
+
+  &-action {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--gray-very-light);
+
+    button {
+      border: none;
+      background-color: transparent;
+      color: var(--blue-grayish-light);
+      font-size: 1rem;
+      transition: color 0.2s ease-in-out;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: var(--blue-moderate);
+      font-weight: 700;
+    }
+  }
+
+
+}
+

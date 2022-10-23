@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-action">
+    <button>+</button>
+    <span>{{comment.score}}</span>
+    <button>-</button>
+  </div>
+  <div class="card-content">
+    <div class="card-header">
+      <div class="card-info">
+        <img class="user-pic" [src]="comment.user.image.png">
+        <strong class="user-username">{{comment.user.username}}</strong>
+        <span class="comment-date">1 month ago</span>
+      </div>
+      <button class="reply">Reply</button>
+    </div>
+    <div class="card-text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+        nunc non nisl aliquet, nec lacinia tortor aliquam. Nullam euismod
+        tincidunt nisl, sit amet aliquet nisl. Sed euismod nunc non nisl aliquet,
+        nec lacinia tortor aliquam. Nullam euismod tincidunt nisl, sit amet
+        aliquet nisl.
+      </p>
+    </div>
+  </div>
+</div>
